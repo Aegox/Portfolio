@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    
+}
+
+.nav img {
+    width: 60px;
+    height: 60px
+}
+
+.nav i {
+    font-size: 35px
+}
+
+.home-welcome {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh
+}
+
+.home-welcome h1 {
+    width: 60%;
+    text-align: center;
+    font-size: 30px
+}
+
+.home-welcome img {
+    bottom: 0;
+    width: 180px;
+    height: 180px
+}
+
+.home-footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.home-footer img {
+
+    width: 85%;
+    height: 100%
+}
+
+.about {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: -5vh;
+    background-color: #28A9F0;
+    height: 500px;
+    padding: 30px;
+    color: white;
+    z-index: 100
+}
+
+.about h1 {
+   font-size:22px;
+   text-align: center;
+   font-weight: bolder;
+   margin-bottom: 15px;
+   margin-top: 20px;
+   width: 100%
+}
+
+.about h3 {
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    height: 1300px;
+    background-color: white;
+    align-items: center;
+     z-index: 1000
+}
+
+.skills-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 650px;
+    box-shadow: 0px 0px 3px 1px rgb(0 0 0 / 0.2);
+    border-radius: 25px 25px 0px 0px ;
+    margin-top: -10vh;
+    background-color: white;
+    z-index: 1000
+   
+}
+
+.skill-logo {
+    width: 130px;
+    margin-top: 20px
+    
+}
+
+.skill-title {
+    font-size: 25px
+}
+
+.detail {
+    margin-top: 5px;
+    text-align: center;
+    width: 60%;
+    font-weight: normal
+    
+}
+
+.mention {
+    color: #28A9F0;
+     margin-top: 25px;
+}
+
+.skill-list {
+    margin-top: 10px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+#skills-backend {
+   border-radius:  0px 0px 25px 25px;
+   margin: 0
+}
+
+#skills-backend img {
+    width: 58px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    height: 900px;
+    background-color: #28A9F0;
+    color: white;
+}
+
+.projects h1 {
+    margin-bottom: 20px; 
+    text-align: center;
+    font-size: 25px
+}
+
+
+.projects h2 {
+    font-weight: lighter;
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+.projects-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 80px
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 250px;
+    border-radius: 15px
+}
+
+#master-recipes {
+    background-color: #1D8845
+}
+
+#orion-musicx {
+    background-color: #361324
+}
+
+#master-recipes img {
+    width: 25%;
+    height: 35%
+}
+
+#orion-musicx img {
+    width: 25%;
+    height: 35%
+}
+
+.contact {
+    width: 100%;
+    height: 860px;
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.formulary {
+    width: 85%;
+    height: 720px;
+    display: flex;
+    flex-direction: column;;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 3px 1px rgb(0 0 0 / 0.2);
+    align-items: center;
+    padding-top: 30px;
+    margin-top: -10vh;
+    gap: 30px
+}
+
+.formulary h2 {
+    margin-bottom: 40px;
+    color: #28A9F0;
+}
+
+.formulary div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%
+}
+
+.formulary div label {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.formulary div textarea , input{
+   border-radius: 10px;
+   border: solid 0.5px #28A9F0;
+   width: 80%
+    
+}
+
+.formulary div input {
+    height: 25px; 
+}
+
+.formulary button {
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    font-size: 22px;
+    color: white;
+    border: solid 0.5px #28A9F0;
+    background-color: #28A9F0;
+}
+
+.contact h3 {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: lighter;
+    width: 80%;
+    font-size: 20px
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    color: white;
+    background-color: #28A9F0;
+    justify-content: space-around
+}
+
+.logo-footer {
+    width: 70px;
+    height: 70px
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+.social img {
+    width: 35px;
+}
+
+
+
+
+
