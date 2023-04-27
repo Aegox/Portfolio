@@ -56,7 +56,6 @@
 }
 
 .home-footer img {
-
     width: 85%;
     height: 100%
 }
@@ -91,7 +90,7 @@
 .skills {
     display: flex;
     flex-direction: column;
-    height: 1300px;
+    height: 1000px;
     background-color: white;
     align-items: center;
      z-index: 1000
@@ -102,7 +101,7 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: 650px;
+    height: 550px;
     box-shadow: 0px 0px 3px 1px rgb(0 0 0 / 0.2);
     border-radius: 25px 25px 0px 0px ;
     margin-top: -10vh;
@@ -158,8 +157,8 @@
     align-items: center;
     padding-top: 80px;
     height: 900px;
-    background-color: #28A9F0;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .projects h1 {
@@ -205,12 +204,12 @@
 
 #master-recipes img {
     width: 25%;
-    height: 35%
+    height: 30%
 }
 
 #orion-musicx img {
     width: 25%;
-    height: 35%
+    height: 30%
 }
 
 .contact {
@@ -232,12 +231,14 @@
     align-items: center;
     padding-top: 30px;
     margin-top: -10vh;
-    gap: 30px
+    gap: 30px;
+    border: solid 0.5px #28A9F0;
+
 }
 
 .formulary h2 {
     margin-bottom: 40px;
-    color: #28A9F0;
+    color: #28A9F0;375
 }
 
 .formulary div {
@@ -306,6 +307,150 @@
 
 .social img {
     width: 35px;
+}
+
+@media screen and (min-width: 1000px) {
+    .home-welcome img {
+        width: 230px;
+        height: 250px
+    }
+
+    .home-welcome h1 {
+        width: 100%;
+        font-size: 45px
+    }
+    
+    .home-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: unset;
+
+    }
+
+    .home-footer img {
+        height: 100%;
+        width: 50%
+    }
+
+    .home {
+        height: 110vh
+    }
+    
+    .about {
+        margin-top: unset;
+        padding: 100px;
+        align-items: center;
+        height: 400px
+    }
+
+    .about h1 {
+        font-size: 30px;
+        margin-bottom: 30px
+    }
+
+    .about h3 {
+        width: 60%;
+        font-size: 22px
+    }
+    
+    .skills {
+        flex-direction: row;
+        height: 600px;
+        justify-content: center
+    }
+
+    .skills-containers {
+        margin-top: -25vh;
+        border-radius: 25px 0px 0px 25px;
+        width: 600px;
+        height: 650px
+    }
+    
+    #skills-backend {
+        border-radius:  0px 25px 25px 0px;
+        margin-top: -25vh
+    }
+    
+     #skills-backend img {
+        margin-top: 100px;
+        margin-bottom: 30px
+     }
+
+    .skill-logo {
+        margin-top: 60px
+    }
+    
+    .projects {
+        height: 600px;
+        border-bottom: solid 0.5px #28A9F0;
+    }
+
+    .projects h1 {
+         font-size: 35px
+    }
+
+    .projects h2 {
+        font-size: 20px
+    }
+
+    .projects-container {
+        flex-direction: row;
+        width: 55%;
+        margin-top: 100px;
+        height: 50%
+    }
+
+    #master-recipes img {
+        width: 25%;
+        height: 35%
+    }
+
+    #orion-musicx img {
+        width: 25%;
+        height: 35%
+    }
+    
+    .contact {
+        height: 1200px
+    }
+
+    .contact h3 {
+        font-size: 25px;
+        margin-top: 150px
+    }
+
+    .formulary {
+        width: 60%;
+        margin-top: 100px
+    }
+
+    .formulary div input , .formulary div textarea {
+        width: 60%
+    }
+
+    .footer {
+        height: 400px
+    }
+
+    .logo-footer {
+        width: 100px;
+        height: 100px
+    }
+    
+    .footer a {
+        font-size: 20px    
+    }
+
+    .footer h3 {
+        font-size: 22px
+    }
+
+    .social img {
+        width: 40px
+    }
+
+
 }
 
 
