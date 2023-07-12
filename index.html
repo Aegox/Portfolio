@@ -3,23 +3,29 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AD Portfolio</title>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/1c7cc831d2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">(function(){ emailjs.init("GHNbY0LeP866dSXV2");})(); </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="./style/styles.css">    <script src="https://kit.fontawesome.com/1c7cc831d2.js" crossorigin="anonymous"></script>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <script src="./script/script.js"></script>
   </head>
-  <body>
-        <div class="home">
+  <body id="section1">
+        <div class="home" >
             <div class='nav'>
                 <img src="./assets/logo2.png"/>
                 <ul class='navBar'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Contact</li>
+                    <a class="section1" href='#section1'>Home</a>
+                    <a class="section2"  href='#section2'>About</a>
+                    <a class="section3" href='#section3'>Skills</a>
+                    <a class="section4" href='#section4'>Proyects</a>
+                    <a class="section5" href='#section5'>Contact</a>
                 </ul>           
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -32,16 +38,20 @@
             </div>
             
         </div>
-        <div class='about'>
+        <div class='about' id='section2'>
             <h1>My name is Diego Amundaray!</h1>
-            <h3>Person dedicated to programming with a continuous learning profile to improve or acquire knowledge and skills, good teamwork and handling a high level of responsibility.
+            <h3>I am a person who is passionate about continuous learning, problem solving and web
+development both in the backend and in the frontend. I have experience in individual and team
+projects, which has taught me the importance of effective communication. I am currently starting
+my path as a Freelancer in web development, my goal is to offer good deadline management and
+quality work oriented to results and achieve success in this stage of my career.</h3>
+            <a class="button-download" href="./assets/Amundaray-Diego-CV.pdf" target="_blank" download>Download Resume</a>
 
-I identify myself working in a pleasant work environment and being able to contribute a lot to whoever is interested, I certainly have the ability to communicate well in any environment, it could be said that I am a very sociable person, capable of creating friendly environments with many or few people.</h3>
         </div>
-        <div class='skills'>
+        <div class='skills' id="section3">
             <div class='skills-containers'>
                 <img class='skill-logo' src="./assets/fronted.jpg"/>
-                <h1 class='skill-title'>Fronnted Developer</h1>
+                <h1 class='skill-title'>Fronted Developer</h1>
                 <h3 class="detail">I used Figma, Gimp and Photoshop.</h3>
                 <h3 class="mention">Languajes | Frameworks</h3>
                 <ul class='skill-list'>
@@ -59,7 +69,7 @@ I identify myself working in a pleasant work environment and being able to contr
                 <h1 class='skill-title'>Backend Developer</h1>
                 <h3 class="detail">I use linux, Insomnia, vim and testing.</h3>
                 <h3 class="mention">Languajes | Frameworks</h3>
-                <ul class='skill-list'>
+                 <ul class='skill-list'>
                     <li>Javascript.</li>
                     <li>Python(Basic).</li>
                     <li>NodeJs.</li>
@@ -68,38 +78,58 @@ I identify myself working in a pleasant work environment and being able to contr
                     <li>ExpressJs.</li>
                     <li>MongoDb.</li>
                 </ul>
-
+                
             </div>
         </div>
-        <div class='projects'>
+        <div class='projects' id="section4">
             <h1>My Projects!</h2>
             <h2>Actually working at more projects and learning Web Development.</h2>
             <div class='projects-container'> 
                 <div class='project' id='master-recipes'>
-                    <img src='./assets/masterrecipes.png'/>
+                    <section id="project-img">
+                        <img src='./assets/masterrecipes.png'/>
+                        <img class="img2" src='./assets/screenshot-master-recipes.png'/>
+                    </section>
+                    <section id="project-info">
+                        <p> Website where you can search recipes for cook , it is a individual project and it was make with ReactJs, Redux, PostgreSql, ExpressJs, NodeJs and Css</p>
+                        <div>
+                            <a href="https://master-recipes.vercel.app" target="_blanck" >Website</a>
+                            <a href="https://github.com/Aegox/Food-Proyect" target="_blanck">Repository</a>
+                         </div>
+                    </section>
                 </div>
                 <div class='project' id='orion-musicx'>
-                    <img src='./assets/orion.png'/>
+                    <section id="project-img">
+                        <img src='./assets/orion.png'/>
+                        <img class="img2" src='./assets/screenshot-orion-project.png'/>
+                    </section>
+                    <section id="project-info">
+                        <p>E-commerce type website where music track is sold, this was a group project where I collaborated with 7 people, it was make with Reactjs, Redux, Firebase, Bootstrap, Css, Nodejs,Figma, Autentication of others.</p>
+                        <div>
+                            <a href="https://orion-proyect.web.app/" target="_blanck">Website</a>
+                            <a href="https://github.com/Aegox/PF-Ecommerce-MusicX" target="_blanck" >Repository</a>
+                         </div>
+                    </section>
                 </div>
             </div> 
         </div>
-        <div class='contact'>
+        <div class='contact' id="section5">
            
             <form class='formulary'>
                 <h2>Contact with me?</h2>
-                <div>
-                    <label>Name</label>
-                    <input/>
-                </div>
-                <div>
-                    <label>Email</label>
-                    <input/>
-                </div>
-                <div>
-                    <label>Message</label>
-                    <textarea  rows=15></textarea>
-                </div>
-                <button>Send</button>
+                    <div> 
+                        <label>Name</label>
+                        <input name='name'/>
+                    </div> 
+                    <div>
+                        <label>Email</label>
+                        <input name='email'/>
+                    </div>
+                    <div>
+                        <label>Message</label>
+                        <textarea  name='message' rows=15></textarea>
+                    </div>
+                    <button>Send</button>
             </form>
             <h3>Thanks for watching my portfolio, i’m really grateful with you. :’)</h3>
         </div>
@@ -107,8 +137,8 @@ I identify myself working in a pleasant work environment and being able to contr
             <img class='logo-footer' src='./assets/logo2.png'/>
             <h3>"The practice makes a master"</h3>
             <div class='social'>
-                <img src='./assets/linkedin.png'/>
-                <img src='./assets/github.png'/>
+                <a href="https://www.linkedin.com/in/diego-amundaray-743862210/" target="_blanck"><img src='./assets/linkedin.png'/></a>
+                <a href="https://github.com/Aegox" target="_blanck"><img src='./assets/github.png'/>
             </div>
             <a>Made by ©Diego Amundaray</a>
         </div>
