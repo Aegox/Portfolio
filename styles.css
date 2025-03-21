@@ -223,6 +223,8 @@
     height: 100%;
     background-color: white;
     color: black;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .projects h1 {
@@ -240,14 +242,15 @@
 }
 
 .projects-container {
-    width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
     margin-top: 80px;
-    margin-bottom: 80px
+    margin-bottom: 80px;
+    justify-content: center;
+
 }
 
 .project {
@@ -256,40 +259,55 @@
     align-items: center;
     width: 350px;
     height: 250px;
-    border-radius: 15px
-}
-
-#master-recipes {
-    background-color: #1D8845;
+    min-height: 250px;
+    min-width: 350px;
+    border-radius: 15px;
     position: relative;
     transition: all 5s
+}
 
+#pomodoro-clock {
+    background-color: black;
 }
 
 #orion-musicx {
     background-color: #361324;
-    position:relative
 }
 
-#master-recipes img {
-    width: 150px;
-    height: 130px;
-    z-index: 101;
-    transition: all 5s
+#triivu-web {
+    background-color: orange;
 }
 
-#orion-musicx img {
+#amun-services {
+    background-color: #4e8c97;
+}
+
+#amunpos {
+    background-color: #0c71c2;
+}
+
+#karinitos {
+    background-color: pink;
+}
+
+
+#amun-services img {
+  height: auto
+}
+
+#amunpos img {
+  width: auto;
+  height: 200px
+  
+}
+
+.project img {
     width: 150px;
     height: 130px;
     z-index: 101
 }
 
-.img2 {
-    display: none;
-    transition: all 5s
-}
-
-#master-recipes:hover .img2 , #orion-musicx:hover .img2 {
+.project:hover .img2 {
     display: block;
     position: absolute;
     margin: 0;
@@ -303,7 +321,7 @@
     left: 0
 }
 
-#master-recipes:hover img , #orion-musicx:hover img{
+.project:hover img {
     display: none
 }
 
@@ -312,7 +330,7 @@
     width: 80%
 }
 
-#master-recipes:hover #project-info , #orion-musicx:hover #project-info{
+.project:hover #project-info {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -395,7 +413,6 @@
 
 .formulary div label {
     font-size: 22px;
-    text-decoration: underline;
 }
 
 .formulary div textarea , input{
@@ -430,6 +447,7 @@
     width: 80%;
     font-size: 20px
 }
+
 
 .footer {
     display: flex;
@@ -560,8 +578,8 @@
     }
     
     .projects {
-        height: 600px;
         border-bottom: solid 0.5px #28A9F0;
+
     }
 
     .projects h1 {
@@ -577,10 +595,11 @@
 				justify-content: center;
         width: 100%;
         margin-top: 100px;
-        height: 50%
+        height: 50%;
+
     }
 
-    #master-recipes img {
+    #triivu-web img {
        width: 140px;
         height: 120px
     }
